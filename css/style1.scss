@@ -1,0 +1,186 @@
+@import "varible";
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: $backGreoundColor;
+}
+
+#nav {
+    @include flex-row();
+    color: #ffffff;
+    a { 
+        color: $linkColor ;
+        text-decoration: none;
+        
+    }
+}
+
+#menu {
+    height: 30%;
+    width: 89%;
+    margin-top: 35px;
+    background-color: $bascColor;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section {
+    height: 100%;
+    width: 100%;
+    background-color: $bascColor;
+    @include flex-colom();
+    justify-content: flex-end;
+}
+
+
+.newProdact {
+    height: 20%;
+    width: 100%;
+@include flex-row();
+justify-content: space-evenly;
+}
+
+#best {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about {
+    height: 30%;
+    width: 100%;
+@include flex-row();
+    justify-content: space-between;
+    margin-top: 80px;
+    @include all-border();
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.social {
+    @include flex-colom();
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+
+.text {
+    color: #ffffff;
+    width: 10%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px $bascColor;
+    background-color: $bascColor;
+    border-radius: 70px;
+}
+#footer {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin-top: 50px;
+    
+}
+.text1 {
+    margin-right: 50px;
+}
+.img1 {
+    @include flex-colom();
+    justify-content: center;
+    align-items: center;
+border-left: solid 5px #479fa0;
+border-right: solid 5px #479fa0;
+background-color: #479fa0;
+ 
+}
+#contacctu {
+    height: 100%;
+    width: 100%;
+  @include flex-row();
+}
+#contact {
+    height: 520px;
+    width: 100%;
+@include all-border();
+    margin-right: 100px;
+    margin-bottom: 30px;
+
+}
+#imgC {
+ margin-top: 20px;
+ margin-left: 20px;
+}
+.img2 {
+    @include flex-row();
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+    
+}
+#sectionP {
+    @include flex-colom();
+}
+.sec11 {
+ 
+    @include flex-row();
+    justify-content: space-around;
+    padding-top: 100px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+}
+.img3 {
+    @include all-border();
+    @include flex-row();
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 100px;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+
+}
+.text5 {
+    color: #ffffff;
+    width: 15%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px $bascColor;
+    background-color: $bascColor;
+    border-radius: 70px;
+}
+.stand {
+    @include flex-colom();
+}
+.standd {
+    @include flex-row();
+}
+.stand1 {
+  @include flex-colom();
+   
+}
+.part {
+    @include flex-row();
+    align-items: center;
+    justify-content: space-evenly;
+}

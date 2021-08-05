@@ -1,0 +1,75 @@
+@import "varible";
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: $backGreoundColor;
+}
+#nav {
+    @include flex-row();
+    color: #ffffff;
+    a { 
+        color: $linkColor ;
+        text-decoration: none;
+        
+    }
+}
+
+#menu {
+    height: 30%;
+    width: 89%;
+    margin-top: 35px;
+    background-color: $bascColor;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    color: #ffffff;
+    width: 10%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px $bascColor;
+    background-color: $bascColor;
+    border-radius: 70px;
+}
+.part {
+    @include flex-row();
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about {
+    height: 30%;
+    width: 100%;
+@include flex-row();
+    justify-content: space-between;
+    margin-top: 80px;
+    @include all-border();
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.social {
+    @include flex-colom();
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+#footer {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin-top: 50px;
+    
+}
